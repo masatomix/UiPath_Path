@@ -52,7 +52,9 @@
     <Compile Include="CombineDesigner.xaml.cs">
       <DependentUpon>CombineDesigner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CurrentDir.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PathUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="CombineDesigner.xaml">

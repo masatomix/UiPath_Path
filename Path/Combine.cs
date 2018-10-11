@@ -14,18 +14,21 @@ namespace Path
         [Category("Input")]
         [RequiredArgument]
         [Description("stringの配列で、連結したいファイルパスを記述します。")]
-        public InArgument<String[]> pathArray { get; set; }
+        public InArgument<String[]> PathArray { get; set; }
 
         [Category("Output")]
-        public OutArgument<String> result { get; set; }
+        public OutArgument<String> Result { get; set; }
 
         // アクティビティが値を返す場合は、CodeActivity<TResult> から派生して、
         // Execute メソッドから値を返します。
         protected override void Execute(CodeActivityContext context)
         {
-            var paths = pathArray.Get(context);
-            var combine = System.IO.Path.Combine(paths);
-            result.Set(context, combine);
+            var paths = PathArray.Get(context);
+            var combine = System.IO.Path.GetFullPath(
+                System.IO.Path.Combine(paths)
+                .Replace("/", "\\"));
+            // ユーザが "/" にしたときもバックスラッシュで返す
+            Result.Set(context, combine);
         }
     }
 }
