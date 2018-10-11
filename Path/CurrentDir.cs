@@ -9,6 +9,7 @@ using System.IO;
 namespace Path
 {
 
+    [Designer(typeof(CurrentDirDesigner))]
     public sealed class CurrentDir : CodeActivity
     {
         [Category("Output")]

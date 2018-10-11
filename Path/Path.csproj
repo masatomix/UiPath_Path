@@ -53,6 +53,12 @@
       <DependentUpon>CombineDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="CurrentDir.cs" />
+    <Compile Include="CurrentDirDesigner.xaml.cs">
+      <DependentUpon>CurrentDirDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PathUtilsDesigner.xaml.cs">
+      <DependentUpon>PathUtilsDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PathUtils.cs" />
   </ItemGroup>
@@ -61,6 +67,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CurrentDirDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PathUtilsDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\folder_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\folder_brick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
