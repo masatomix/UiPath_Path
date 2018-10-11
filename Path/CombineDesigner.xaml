@@ -21,9 +21,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="pathArray" />
+        <Label Content="Pathの配列" />
         <sapv:ExpressionTextBox 
-        Expression="{Binding ModelItem.pathArray, 
+        Expression="{Binding ModelItem.PathArray, 
             ConverterParameter=In, 
             Converter={StaticResource ArgumentToExpressionConverter}, 
             Mode=TwoWay}"
