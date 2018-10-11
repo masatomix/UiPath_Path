@@ -9,6 +9,7 @@ using System.IO;
 namespace Path
 {
 
+    [Designer(typeof(PathUtilsDesigner))]
     public sealed class PathUtils : CodeActivity
     {
 
