@@ -5,7 +5,7 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 
-namespace Path
+namespace Utils.Path
 {
 
     [Designer(typeof(CombineDesigner))]

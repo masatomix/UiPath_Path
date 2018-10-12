@@ -12,12 +12,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Path
+namespace Utils.Path
 {
-    // CombineDesigner.xaml の相互作用ロジック
-    public partial class CombineDesigner
+    // PathUtilsDesigner.xaml の相互作用ロジック
+    public partial class PathUtilsDesigner
     {
-        public CombineDesigner()
+        public PathUtilsDesigner()
         {
             InitializeComponent();
         }
