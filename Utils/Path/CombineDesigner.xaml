@@ -1,4 +1,4 @@
-﻿<sap:ActivityDesigner x:Class="Path.CombineDesigner"
+﻿<sap:ActivityDesigner x:Class="Utils.Path.CombineDesigner"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:s="clr-namespace:System;assembly=mscorlib"
@@ -11,7 +11,24 @@
             <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
         </ResourceDictionary>
     </sap:ActivityDesigner.Resources>
-
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush>
+            <DrawingBrush.Drawing>
+                <DrawingGroup>
+                    <DrawingGroup.Children>
+                        <DrawingGroup>
+                            <DrawingGroup.Transform>
+                                <MatrixTransform Matrix="1,0,0,1,0,0"/>
+                            </DrawingGroup.Transform>
+                            <DrawingGroup.Children>
+                                <ImageDrawing ImageSource="../images/folder_wrench.png" Rect="0,0,16,16"/>
+                            </DrawingGroup.Children>
+                        </DrawingGroup>
+                    </DrawingGroup.Children>
+                </DrawingGroup>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </sap:ActivityDesigner.Icon>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>

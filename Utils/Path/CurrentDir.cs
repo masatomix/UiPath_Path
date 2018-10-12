@@ -6,9 +6,10 @@ using System.Activities;
 using System.ComponentModel;
 using System.IO;
 
-namespace Path
+namespace Utils.Path
 {
 
+    [Designer(typeof(CurrentDirDesigner))]
     public sealed class CurrentDir : CodeActivity
     {
         [Category("Output")]
