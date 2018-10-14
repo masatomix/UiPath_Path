@@ -12,14 +12,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Utils.Path
+namespace Utils.StringUtils
 {
-    // CurrentDirDesigner.xaml の相互作用ロジック
-    public partial class CurrentDirDesigner
+    // Base64EncodeDesigner.xaml の相互作用ロジック
+    public partial class Base64EncodeDesigner
     {
-        public CurrentDirDesigner()
+        public Base64EncodeDesigner()
         {
             InitializeComponent();
         }
+
     }
 }

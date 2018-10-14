@@ -12,12 +12,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Utils.Path
+namespace Utils.PathUtils
 {
-    // PathUtilsDesigner.xaml の相互作用ロジック
-    public partial class PathUtilsDesigner
+    // CurrentDirDesigner.xaml の相互作用ロジック
+    public partial class CurrentDirDesigner
     {
-        public PathUtilsDesigner()
+        public CurrentDirDesigner()
         {
             InitializeComponent();
         }

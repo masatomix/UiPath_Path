@@ -1,0 +1,41 @@
+﻿<sap:ActivityDesigner x:Class="Utils.StringUtils.Base64EncodeFromFileDesigner"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uip="clr-namespace:Utils.Controls" 
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation">
+
+    <sap:ActivityDesigner.Resources>
+        <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
+    </sap:ActivityDesigner.Resources>
+
+    <sap:ActivityDesigner.Icon>
+        <DrawingBrush>
+            <DrawingBrush.Drawing>
+                <DrawingGroup>
+                    <DrawingGroup.Children>
+                        <DrawingGroup>
+                            <DrawingGroup.Transform>
+                                <MatrixTransform Matrix="1,0,0,1,0,0"/>
+                            </DrawingGroup.Transform>
+                            <DrawingGroup.Children>
+                                <ImageDrawing ImageSource="../images/text_horizontalrule.png" Rect="0,0,16,16"/>
+                            </DrawingGroup.Children>
+                        </DrawingGroup>
+                    </DrawingGroup.Children>
+                </DrawingGroup>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </sap:ActivityDesigner.Icon>
+
+    <DockPanel Width="300">
+        <uip:FilePathControl ModelItem="{Binding ModelItem}" 
+                             HintText="File name. Text must be quoted" 
+                             PropertyName="Path" 
+                             Expression="{Binding Path=ModelItem.Path, 
+            Converter={StaticResource ArgumentToExpressionConverter},
+            ConverterParameter=In, Mode=TwoWay}" />
+    </DockPanel>
+
+</sap:ActivityDesigner>
