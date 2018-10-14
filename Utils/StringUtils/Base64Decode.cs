@@ -5,9 +5,11 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 
-namespace Utils.Strings
+namespace Utils.StringUtils
 {
 
+
+    [Designer(typeof(Base64DecodeDesigner))]
     public sealed class Base64Decode : CodeActivity
     {
         [Category("Input")]

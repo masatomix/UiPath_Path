@@ -6,7 +6,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.IO;
 
-namespace Utils.Path
+namespace Utils.PathUtils
 {
 
     [Designer(typeof(CurrentDirDesigner))]
