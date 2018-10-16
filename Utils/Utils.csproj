@@ -69,6 +69,9 @@
       <DependentUpon>Base64DecodeDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="StringUtils\Base64Encode.cs" />
+    <Compile Include="StringUtils\ConvertCRLFDesigner.xaml.cs">
+      <DependentUpon>ConvertCRLFDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StringUtils\Base64EncodeFromFileDesigner.xaml.cs">
       <DependentUpon>Base64EncodeFromFileDesigner.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,7 @@
       <DependentUpon>Base64EncodeDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="StringUtils\Base64EncodeFromFile.cs" />
+    <Compile Include="StringUtils\ConvertCRLF.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Controls\FilePathControl.xaml">
@@ -97,6 +101,10 @@
     <Page Include="StringUtils\Base64DecodeDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StringUtils\ConvertCRLFDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="StringUtils\Base64EncodeFromFileDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -122,6 +130,9 @@
   <ItemGroup>
     <Resource Include="images\text_horizontalrule.png" />
     <Resource Include="images\text_padding_bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\page_add.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
