@@ -24,6 +24,13 @@ namespace Utils.PathUtils
 
 
         [Category("Output")]
+        [Description("Directory名が返ります。原則 Path.GetDirectoryName() とおなじものを返しますが、" +
+            "存在するディレクトリを指定したときは末尾に\\がなくてもそのディレクトリ名を返します。" +
+            "Path.GetDirectoryName()はその上のディレクトリ名を返してしまうようで。。")]
+        public OutArgument<String> DirectoryName { get; set; }
+
+
+        [Category("Output")]
         [Description("指定したディレクトリが存在すればTrue(ファイルだったら存在してもFalse)")]
         public OutArgument<Boolean> DirExists { get; set; }
 
@@ -44,11 +51,35 @@ namespace Utils.PathUtils
             string fullPathStr = System.IO.Path.GetFullPath(pathStr).Replace("/", "\\");
             context.SetValue(FullPath, fullPathStr);
 
-
             // DirExist セクション
-            context.SetValue(DirExists, Directory.Exists(fullPathStr));
+            var dirExists = Directory.Exists(fullPathStr);
+            context.SetValue(DirExists, dirExists);
+
+
             // FileExists セクション
-            context.SetValue(FileExists, File.Exists(fullPathStr));
+            var fileExists = File.Exists(fullPathStr);
+            context.SetValue(FileExists, fileExists);
+
+
+            if (dirExists)
+            {
+                // fullPathStrの元になっている pathStrの末尾が\で終わる場合、終わらない場合があり
+                // \で終了していない場合、GetDirectoryName はその上のパスを返してしまう
+                // そのディレクトリが存在するときくらい、そのパス自体を返してあげるべきでは、という対応
+                var tmp = System.IO.Path.Combine(fullPathStr, "dummy.txt");
+
+                //  DirectoryName セクション
+                context.SetValue(DirectoryName, System.IO.Path.GetDirectoryName(tmp));
+            }
+            else
+            {
+                //  DirectoryName セクション
+                context.SetValue(DirectoryName, System.IO.Path.GetDirectoryName(fullPathStr));
+            }
+
+
+
+
 
 
         }
