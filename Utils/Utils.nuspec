@@ -3,16 +3,14 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
+    <title>$id$</title>
     <authors>masatomix</authors>
     <owners>masatomix</owners>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
     <projectUrl>https://github.com/masatomix/UiPath_Path</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>PathUtilsに、ディレクトリ名を取得するメソッドを追加</releaseNotes>
+    <releaseNotes>ターゲットフレームワークを.NET Framework 4.5に変更</releaseNotes>
     <copyright>Copyright 2018 masatomix</copyright>
   </metadata>
-  <files>
-    <file src="bin\Release\*.dll" target="lib" />
-  </files>
 </package>
