@@ -6,7 +6,7 @@
     <title>$id$</title>
     <authors>masatomix</authors>
     <owners>masatomix</owners>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/masatomix/UiPath_Path</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
