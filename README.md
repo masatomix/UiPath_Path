@@ -11,6 +11,7 @@ UiPathをやっていると、今いるディレクトリ名を取得したり�
 - [Base64 Decode](#base64-decode-アクティビティ): Base64 Decodeします
 - [Base64 Encode From File](#base64-encode-from-file-アクティビティ): ファイルをBase64 Encodeします
 - [ConvertCRLF](#convert-crlf-アクティビティ): 改行コードを変換します
+- [ToJSONString](#to-json-string-アクティビティ): 任意のオブジェクトをJSON文字列化します
 
 ## Path Utils
 ### Combine アクティビティ
@@ -127,3 +128,19 @@ public byte[] ReadFile(string filePath)
 ```
 
 こんな感じ。
+
+### To JSON String アクティビティ
+任意のオブジェクトをJSON文字列化するアクティビティです。
+![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/e223b3e9-c4eb-b630-380c-8039e3789593.png)
+
+例としてはDictionaryオブジェクトを生成して渡してみると、Key/ValueがJSON文字列として出力されています。
+![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/3eff4cb6-5ac8-8c8d-932e-04b66eefbadb.png)
+
+
+処理的には
+
+```C#
+String jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(obj, Formatting.Indented);
+```
+
+です。
