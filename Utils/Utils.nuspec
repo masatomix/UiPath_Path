@@ -10,7 +10,11 @@
     <projectUrl>https://github.com/masatomix/UiPath_Path</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>ターゲットフレームワークを.NET Framework 4.5に変更</releaseNotes>
+    <releaseNotes>
+ターゲットフレームワークを.NET Framework 4.5に変更
+Newtonsoft.Jsonの依存関係を追記
+ToJsonアクティビティを追加
+</releaseNotes>
     <copyright>Copyright 2018 masatomix</copyright>
   </metadata>
 </package>
