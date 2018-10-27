@@ -9,11 +9,23 @@
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/masatomix/UiPath_Path</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>
+When using UiPath, I often want to call methods of .NET, such as getting the name of the current directory, base64 encode the file,These activities are the activities that call those methods.
+
+
+UiPathをやっていると、今いるディレクトリ名を取得したり、ファイルをBase64 Encodeしたりなど、.NETのメソッドを呼びたいことがちょくちょくあるのですが、それらを呼び出すアクティビティになっています。
+
+</description>
     <releaseNotes>
+Change target framework to .NET Framework 4.5.
+Add dependency of Newtonsoft.Json.
+Add ToJson Activity.
+Add English readme.
+
 ターゲットフレームワークを.NET Framework 4.5に変更
 Newtonsoft.Jsonの依存関係を追記
 ToJsonアクティビティを追加
+英語版Readmeを追加
 </releaseNotes>
     <copyright>Copyright 2018 masatomix</copyright>
   </metadata>
