@@ -16,7 +16,7 @@ It provides the following functions.
 ### Combine Activity
 ![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/53dddd49-a08f-e13c-0703-71c24d42aa4b.png)
 
- Combines an array of strings into a path. That is
+ Combines an array of strings into a path. That is as follows:
 
 ```
 {"c:\temp","hogehoge"} → c:\temp\hogehoge
@@ -43,7 +43,7 @@ Specify relative/absolute path and get the following:
 | FileExists      |returns true if the specified File exists (returns false even if it exists if it is a Directory).|
 | FullPath        |returns full Path.|
 
-※ Basically it returns the same as `Path.GetDirectoryName()`. If an existing directory is specified, even if there is no "\" at the end, the directory name is returned.
+※ Basically it returns the same as `Path.GetDirectoryName()`. If an existing directory is specified, even if there is no "\\" at the end, the directory name is returned.
 
 
 ## String Utils
