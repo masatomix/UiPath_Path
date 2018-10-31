@@ -4,16 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Activities;
 using System.ComponentModel;
+using System.Threading;
+using Utils.Properties;
+using Utils.Common;
+
 
 namespace Utils.PathUtils
 {
 
     [Designer(typeof(CombineDesigner))]
+    //[DisplayName("パス連結")]
     public sealed class Combine : CodeActivity
     {
         [Category("Input")]
         [RequiredArgument]
-        [Description("stringの配列で、連結したいファイルパスを記述します。")]
+        [LocalizedDescription("Combine_Description")]
+        //[DisplayName("パスの配列")]
         public InArgument<String[]> PathArray { get; set; }
 
         [Category("Output")]
@@ -31,4 +37,6 @@ namespace Utils.PathUtils
             Result.Set(context, combine);
         }
     }
+
+
 }

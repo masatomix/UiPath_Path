@@ -5,6 +5,7 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 using System.IO;
+using Utils.Common;
 
 namespace Utils.StringUtils
 {
@@ -15,7 +16,7 @@ namespace Utils.StringUtils
 
         [Category("Input")]
         [RequiredArgument]
-        [Description("処理したいファイルのファイルパスを指定します")]
+        [LocalizedDescription("Base64EncodeFromFile_Description")]
         public InArgument<String> Path { get; set; }
 
 
