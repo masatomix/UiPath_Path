@@ -17,16 +17,15 @@ UiPathをやっていると、今いるディレクトリ名を取得したり�
 
 </description>
     <releaseNotes>
-Change target framework to .NET Framework 4.5.
-Add dependency of Newtonsoft.Json.
-Add ToJson Activity.
-Add English readme.
+Available in English.
 
-ターゲットフレームワークを.NET Framework 4.5に変更
-Newtonsoft.Jsonの依存関係を追記
-ToJsonアクティビティを追加
-英語版Readmeを追加
+英語ロケールでは、英語表記になるように対応
+というかデフォルトを英語とし、日本語ロケールで日本語表記になるように対応。Studio 2018.2までは日本語ロケールで起動しないので、英語表記となります。単純だから問題ないと思いますが。。
 </releaseNotes>
     <copyright>Copyright 2018 masatomix</copyright>
   </metadata>
+    <files>
+      <file src="bin\Release\ja-JP\*.dll" target="lib\net45\ja-JP" />
+      <file src="bin\Release\ja\*.dll" target="lib\net45\ja" />
+    </files>
 </package>

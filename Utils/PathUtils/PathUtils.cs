@@ -5,6 +5,7 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 using System.IO;
+using Utils.Common;
 
 namespace Utils.PathUtils
 {
@@ -15,28 +16,26 @@ namespace Utils.PathUtils
 
         [Category("Input")]
         [RequiredArgument]
-        [Description("処理したいファイルパスを記述します。")]
+        [LocalizedDescription("PathUtils_Path_Desc")]
         public InArgument<String> Path { get; set; }
 
         [Category("Output")]
-        [Description("フルパスが返ります")]
+        [LocalizedDescription("PathUtils_FullPath_Desc")]
         public OutArgument<String> FullPath { get; set; }
 
 
         [Category("Output")]
-        [Description("Directory名が返ります。原則 Path.GetDirectoryName() とおなじものを返しますが、" +
-            "存在するディレクトリを指定したときは末尾に\\がなくてもそのディレクトリ名を返します。" +
-            "Path.GetDirectoryName()はその上のディレクトリ名を返してしまうようで。。")]
+        [LocalizedDescription("PathUtils_DirectoryName_Desc")]
         public OutArgument<String> DirectoryName { get; set; }
 
 
         [Category("Output")]
-        [Description("指定したディレクトリが存在すればTrue(ファイルだったら存在してもFalse)")]
+        [LocalizedDescription("PathUtils_DirExists_Desc")]
         public OutArgument<Boolean> DirExists { get; set; }
 
 
         [Category("Output")]
-        [Description("指定したファイルが存在すればTrue(ディレクトリだったら存在してもFalse)")]
+        [LocalizedDescription("PathUtils_FileExists_Desc")]
         public OutArgument<Boolean> FileExists { get; set; }
 
 
