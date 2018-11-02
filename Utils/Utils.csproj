@@ -49,6 +49,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commons\DesignerMetadata.cs" />
     <Compile Include="PathUtils\Combine.cs" />
     <Compile Include="PathUtils\CombineDesigner.xaml.cs">
       <DependentUpon>CombineDesigner.xaml</DependentUpon>
@@ -60,6 +61,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\folder_wrench.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
