@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$id$</title>
+    <authors>masatomix</authors>
+    <owners>masatomix</owners>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/masatomix/UiPath_Path</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+When using UiPath, I often want to call methods of .NET, such as getting the name of the current directory, base64 encode the file,These activities are the activities that call those methods.
+
+
+UiPathをやっていると、今いるディレクトリ名を取得したり、ファイルをBase64 Encodeしたりなど、.NETのメソッドを呼びたいことがちょくちょくあるのですが、それらを呼び出すアクティビティになっています。
+
+</description>
+    <releaseNotes>
+Available in English.
+
+英語ロケールでは、英語表記になるように対応
+というかデフォルトを英語とし、日本語ロケールで日本語表記になるように対応。Studio 2018.2までは日本語ロケールで起動しないので、英語表記となります。単純だから問題ないと思いますが。。
+</releaseNotes>
+    <copyright>Copyright 2018 masatomix</copyright>
+  </metadata>
+</package>

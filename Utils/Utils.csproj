@@ -7,11 +7,12 @@
     <ProjectGuid>{33C908FA-8ED1-44D7-B374-08D428458FE4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Path</RootNamespace>
-    <AssemblyName>ActivitiesPathUtils</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Utils</RootNamespace>
+    <AssemblyName>kino.UiPath.Utils.Activities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,14 +49,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Combine.cs" />
-    <Compile Include="CombineDesigner.xaml.cs">
+    <Compile Include="PathUtils\Combine.cs" />
+    <Compile Include="PathUtils\CombineDesigner.xaml.cs">
       <DependentUpon>CombineDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="CombineDesigner.xaml">
+    <Page Include="PathUtils\CombineDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
