@@ -13,7 +13,6 @@ namespace Utils.PathUtils
     {
         [Category("Input")]
         [RequiredArgument]
-        [Description("stringの配列で、連結したいファイルパスを記述します。")]
         public InArgument<String[]> PathArray { get; set; }
 
         [Category("Output")]
