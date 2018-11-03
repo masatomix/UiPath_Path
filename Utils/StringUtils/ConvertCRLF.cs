@@ -6,6 +6,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.Text.RegularExpressions;
 using Utils.Common;
+using Utils.Properties;
 
 namespace Utils.StringUtils
 {
@@ -15,15 +16,12 @@ namespace Utils.StringUtils
     {
         [Category("Input")]
         [RequiredArgument]
-        [LocalizedDescription("ConvertCRLF_Description")]
         public InArgument<String> Target { get; set; }
 
 
-        [LocalizedCategory("ConvertCRLF_Category")]
         [DefaultValue(false)]
         public Boolean CR { get; set; }
 
-        [LocalizedCategory("ConvertCRLF_Category")]
         [DefaultValue(false)]
         public Boolean LF { get; set; }
 

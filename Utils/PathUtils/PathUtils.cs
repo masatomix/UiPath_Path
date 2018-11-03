@@ -6,6 +6,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.IO;
 using Utils.Common;
+using Utils.Properties;
 
 namespace Utils.PathUtils
 {
@@ -16,26 +17,21 @@ namespace Utils.PathUtils
 
         [Category("Input")]
         [RequiredArgument]
-        [LocalizedDescription("PathUtils_Path_Desc")]
         public InArgument<String> Path { get; set; }
 
         [Category("Output")]
-        [LocalizedDescription("PathUtils_FullPath_Desc")]
         public OutArgument<String> FullPath { get; set; }
 
 
         [Category("Output")]
-        [LocalizedDescription("PathUtils_DirectoryName_Desc")]
         public OutArgument<String> DirectoryName { get; set; }
 
 
         [Category("Output")]
-        [LocalizedDescription("PathUtils_DirExists_Desc")]
         public OutArgument<Boolean> DirExists { get; set; }
 
 
         [Category("Output")]
-        [LocalizedDescription("PathUtils_FileExists_Desc")]
         public OutArgument<Boolean> FileExists { get; set; }
 
 
