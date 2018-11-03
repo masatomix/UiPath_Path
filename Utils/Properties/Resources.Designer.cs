@@ -61,38 +61,29 @@ namespace Utils.Properties {
         }
         
         /// <summary>
-        ///   Specify the String to be decoded. に類似しているローカライズされた文字列を検索します。
+        ///   Utils.Path Utilities に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string Base64Decode_Description {
+        public static string Category1_PathUtils {
             get {
-                return ResourceManager.GetString("Base64Decode_Description", resourceCulture);
+                return ResourceManager.GetString("Category1_PathUtils", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Specify the String to be encoded. に類似しているローカライズされた文字列を検索します。
+        ///   Utils.String Utilities に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string Base64Encode_Description {
+        public static string Category1_StringUtils {
             get {
-                return ResourceManager.GetString("Base64Encode_Description", resourceCulture);
+                return ResourceManager.GetString("Category1_StringUtils", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Specify the file path of the file to be  encoded. に類似しているローカライズされた文字列を検索します。
+        ///   Line feed code to be set に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string Base64EncodeFromFile_Description {
+        public static string Category5_ConvertCRLF_CRLF {
             get {
-                return ResourceManager.GetString("Base64EncodeFromFile_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   An array of parts of the path. に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string Combine_Description {
-            get {
-                return ResourceManager.GetString("Combine_Description", resourceCulture);
+                return ResourceManager.GetString("Category5_ConvertCRLF_CRLF", resourceCulture);
             }
         }
         
@@ -106,74 +97,245 @@ namespace Utils.Properties {
         }
         
         /// <summary>
-        ///   Line feed code to be set に類似しているローカライズされた文字列を検索します。
+        ///   Converts the specified string, which encodes binary data as base-64 digits. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ConvertCRLF_Category {
+        public static string Description3_Base64Decode {
             get {
-                return ResourceManager.GetString("ConvertCRLF_Category", resourceCulture);
+                return ResourceManager.GetString("Description3_Base64Decode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Converts a String to its equivalent string representation that is encoded with base-64 digits. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_Base64Encode {
+            get {
+                return ResourceManager.GetString("Description3_Base64Encode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Converts a String to its equivalent string representation that is encoded with base-64 digits. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_Base64EncodeFromFile {
+            get {
+                return ResourceManager.GetString("Description3_Base64EncodeFromFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Combines an array of strings into a path. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_Combine {
+            get {
+                return ResourceManager.GetString("Description3_Combine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Convert the line feed code of the given text. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_ConvertCRLF {
+            get {
+                return ResourceManager.GetString("Description3_ConvertCRLF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Gets the current working directory. only calls Directory.GetCurrentDirectory method. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_CurrentDir {
+            get {
+                return ResourceManager.GetString("Description3_CurrentDir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Returns the absolute path for the specified path string ,checks the existence of the file ,etc. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_PathUtils {
+            get {
+                return ResourceManager.GetString("Description3_PathUtils", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An activity that converts arbitrary objects to JSON strings. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description3_ToJSONString {
+            get {
+                return ResourceManager.GetString("Description3_ToJSONString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Specify the String to be decoded. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description4_Base64Decode_Target {
+            get {
+                return ResourceManager.GetString("Description4_Base64Decode_Target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Specify the String to be encoded. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description4_Base64Encode_Target {
+            get {
+                return ResourceManager.GetString("Description4_Base64Encode_Target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Specify the file path of the file to be  encoded. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description4_Base64EncodeFromFile_Path {
+            get {
+                return ResourceManager.GetString("Description4_Base64EncodeFromFile_Path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   An array of parts of the path. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Description4_Combine_PathArray {
+            get {
+                return ResourceManager.GetString("Description4_Combine_PathArray", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Specify the String to be converted. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string ConvertCRLF_Description {
+        public static string Description4_ConvertCRLF_Target {
             get {
-                return ResourceManager.GetString("ConvertCRLF_Description", resourceCulture);
+                return ResourceManager.GetString("Description4_ConvertCRLF_Target", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Returns  the current working directory に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string CurrentDir_Description {
+        public static string Description4_CurrentDir_FullPath {
             get {
-                return ResourceManager.GetString("CurrentDir_Description", resourceCulture);
+                return ResourceManager.GetString("Description4_CurrentDir_FullPath", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no &quot;\&quot; at the end, the directory name is returned. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string PathUtils_DirectoryName_Desc {
+        public static string Description4_PathUtils_DirectoryName {
             get {
-                return ResourceManager.GetString("PathUtils_DirectoryName_Desc", resourceCulture);
+                return ResourceManager.GetString("Description4_PathUtils_DirectoryName", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Returns true if the specified Directory exists (returns false even if it exists if it is a File). に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string PathUtils_DirExists_Desc {
+        public static string Description4_PathUtils_DirExists {
             get {
-                return ResourceManager.GetString("PathUtils_DirExists_Desc", resourceCulture);
+                return ResourceManager.GetString("Description4_PathUtils_DirExists", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Returns true if the specified File exists (returns false even if it exists if it is a Directory). に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string PathUtils_FileExists_Desc {
+        public static string Description4_PathUtils_FileExists {
             get {
-                return ResourceManager.GetString("PathUtils_FileExists_Desc", resourceCulture);
+                return ResourceManager.GetString("Description4_PathUtils_FileExists", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Returns full Path. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string PathUtils_FullPath_Desc {
+        public static string Description4_PathUtils_FullPath {
             get {
-                return ResourceManager.GetString("PathUtils_FullPath_Desc", resourceCulture);
+                return ResourceManager.GetString("Description4_PathUtils_FullPath", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Enter the file path as a string. に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string PathUtils_Path_Desc {
+        public static string Description4_PathUtils_Path {
             get {
-                return ResourceManager.GetString("PathUtils_Path_Desc", resourceCulture);
+                return ResourceManager.GetString("Description4_PathUtils_Path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Base64 Decode に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_Base64Decode {
+            get {
+                return ResourceManager.GetString("DisplayName2_Base64Decode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Base64 Encode に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_Base64Encode {
+            get {
+                return ResourceManager.GetString("DisplayName2_Base64Encode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Base64 Encode From File に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_Base64EncodeFromFile {
+            get {
+                return ResourceManager.GetString("DisplayName2_Base64EncodeFromFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Combine に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_Combine {
+            get {
+                return ResourceManager.GetString("DisplayName2_Combine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Convert CR/LF に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_ConvertCRLF {
+            get {
+                return ResourceManager.GetString("DisplayName2_ConvertCRLF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Current Dir に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_CurrentDir {
+            get {
+                return ResourceManager.GetString("DisplayName2_CurrentDir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Path Utils に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_PathUtils {
+            get {
+                return ResourceManager.GetString("DisplayName2_PathUtils", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   To JSON String に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName2_ToJSONString {
+            get {
+                return ResourceManager.GetString("DisplayName2_ToJSONString", resourceCulture);
             }
         }
     }

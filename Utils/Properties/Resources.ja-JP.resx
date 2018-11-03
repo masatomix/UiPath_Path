@@ -117,43 +117,79 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Combine_Description" xml:space="preserve">
+  <data name="Description4_Combine_PathArray" xml:space="preserve">
     <value>stringの配列で、連結したいファイルパスを記述します。</value>
   </data>
-  <data name="PathUtils_DirectoryName_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_DirectoryName_Desc" xml:space="preserve">
     <value>Directory名が返ります。原則 Path.GetDirectoryName() とおなじものを返しますが存在するディレクトリを指定したときは末尾に\\がなくてもそのディレクトリ名を返します。Path.GetDirectoryName()はその上のディレクトリ名を返してしまうようで。。</value>
   </data>
-  <data name="PathUtils_DirExists_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_DirExists" xml:space="preserve">
     <value>指定したディレクトリが存在すればTrue(ファイルだったら存在してもFalse)</value>
   </data>
-  <data name="PathUtils_FileExists_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_FileExists" xml:space="preserve">
     <value>指定したファイルが存在すればTrue(ディレクトリだったら存在してもFalse)</value>
   </data>
-  <data name="PathUtils_FullPath_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_FullPath" xml:space="preserve">
     <value>フルパスが返ります</value>
   </data>
-  <data name="PathUtils_Path_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_Path" xml:space="preserve">
     <value>処理したいファイルパスを記述します。</value>
   </data>
   <data name="CombineDesigner_Label" xml:space="preserve">
     <value>Pathの配列</value>
   </data>
-  <data name="CurrentDir_Description" xml:space="preserve">
+  <data name="Description4_CurrentDir_FullPath" xml:space="preserve">
     <value>現在のディレクトリがフルパスで返ります</value>
   </data>
-  <data name="Base64Decode_Description" xml:space="preserve">
+  <data name="Description4_Base64Decode_Target" xml:space="preserve">
     <value>処理したい文字データを指定します</value>
   </data>
-  <data name="Base64EncodeFromFile_Description" xml:space="preserve">
+  <data name="Description4_Base64EncodeFromFile_Path" xml:space="preserve">
     <value>処理したいファイルのファイルパスを指定します</value>
   </data>
-  <data name="Base64Encode_Description" xml:space="preserve">
+  <data name="Description4_Base64Encode_Target" xml:space="preserve">
     <value>処理したい文字データを指定します</value>
   </data>
-  <data name="ConvertCRLF_Description" xml:space="preserve">
+  <data name="Description4_ConvertCRLF_Target" xml:space="preserve">
     <value>処理したい文字データを指定します</value>
   </data>
-  <data name="ConvertCRLF_Category" xml:space="preserve">
+  <data name="Category5_ConvertCRLF_CRLF" xml:space="preserve">
     <value>セットする改行コード</value>
+  </data>
+  <data name="Description3_Base64Decode" xml:space="preserve">
+    <value>Base64 Encodeされた文字列をDecodeし、UTF-8で文字列にします。</value>
+  </data>
+  <data name="Description3_Base64Encode" xml:space="preserve">
+    <value>文字列をUTF-8とみなしBase64 Encodeします。</value>
+  </data>
+  <data name="Description3_Base64EncodeFromFile" xml:space="preserve">
+    <value>ファイルをバイナリで読取り、Base64 Encodeします。</value>
+  </data>
+  <data name="Description3_Combine" xml:space="preserve">
+    <value>指定されたパスの配列を連結して、パスを生成します。</value>
+  </data>
+  <data name="Description3_ConvertCRLF" xml:space="preserve">
+    <value>与えられたテキストの改行コードを変換します。</value>
+  </data>
+  <data name="Description3_CurrentDir" xml:space="preserve">
+    <value>現在のディレクトリのフルパスを返すアクティビティです。ただ Directory.GetCurrentDirectory するだけです。</value>
+  </data>
+  <data name="Description3_PathUtils" xml:space="preserve">
+    <value>ファイルの存在チェックなどや、絶対パスなどを返します。</value>
+  </data>
+  <data name="Description3_ToJSONString" xml:space="preserve">
+    <value>任意のオブジェクトをJSON文字列化するアクティビティです。</value>
+  </data>
+  <data name="DisplayName2_Combine" xml:space="preserve">
+    <value>パス連結</value>
+  </data>
+  <data name="DisplayName2_ConvertCRLF" xml:space="preserve">
+    <value>改行コード変換</value>
+  </data>
+  <data name="DisplayName2_CurrentDir" xml:space="preserve">
+    <value>今いるディレクトリ</value>
+  </data>
+  <data name="DisplayName2_ToJSONString" xml:space="preserve">
+    <value>JSONへ変換</value>
   </data>
 </root>

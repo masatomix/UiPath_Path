@@ -117,43 +117,97 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Combine_Description" xml:space="preserve">
-    <value>An array of parts of the path.</value>
-  </data>
-  <data name="PathUtils_DirectoryName_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_DirectoryName" xml:space="preserve">
     <value>Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no "\" at the end, the directory name is returned.</value>
   </data>
-  <data name="PathUtils_DirExists_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_DirExists" xml:space="preserve">
     <value>Returns true if the specified Directory exists (returns false even if it exists if it is a File).</value>
   </data>
-  <data name="PathUtils_FileExists_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_FileExists" xml:space="preserve">
     <value>Returns true if the specified File exists (returns false even if it exists if it is a Directory).</value>
   </data>
-  <data name="PathUtils_FullPath_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_FullPath" xml:space="preserve">
     <value>Returns full Path.</value>
   </data>
-  <data name="PathUtils_Path_Desc" xml:space="preserve">
+  <data name="Description4_PathUtils_Path" xml:space="preserve">
     <value>Enter the file path as a string.</value>
   </data>
   <data name="CombineDesigner_Label" xml:space="preserve">
     <value>Path Array</value>
   </data>
-  <data name="CurrentDir_Description" xml:space="preserve">
-    <value>Returns  the current working directory</value>
-  </data>
-  <data name="Base64Decode_Description" xml:space="preserve">
+  <data name="Description4_Base64Decode_Target" xml:space="preserve">
     <value>Specify the String to be decoded.</value>
   </data>
-  <data name="Base64EncodeFromFile_Description" xml:space="preserve">
+  <data name="Description4_Base64EncodeFromFile_Path" xml:space="preserve">
     <value>Specify the file path of the file to be  encoded.</value>
   </data>
-  <data name="Base64Encode_Description" xml:space="preserve">
+  <data name="Description4_Base64Encode_Target" xml:space="preserve">
     <value>Specify the String to be encoded.</value>
   </data>
-  <data name="ConvertCRLF_Description" xml:space="preserve">
+  <data name="Description4_ConvertCRLF_Target" xml:space="preserve">
     <value>Specify the String to be converted.</value>
   </data>
-  <data name="ConvertCRLF_Category" xml:space="preserve">
+  <data name="Category5_ConvertCRLF_CRLF" xml:space="preserve">
     <value>Line feed code to be set</value>
+  </data>
+  <data name="Category1_PathUtils" xml:space="preserve">
+    <value>Utils.Path Utilities</value>
+  </data>
+  <data name="Category1_StringUtils" xml:space="preserve">
+    <value>Utils.String Utilities</value>
+  </data>
+  <data name="Description3_Combine" xml:space="preserve">
+    <value>Combines an array of strings into a path.</value>
+  </data>
+  <data name="Description4_Combine_PathArray" xml:space="preserve">
+    <value>An array of parts of the path.</value>
+  </data>
+  <data name="Description3_CurrentDir" xml:space="preserve">
+    <value>Gets the current working directory. only calls Directory.GetCurrentDirectory method.</value>
+  </data>
+  <data name="Description4_CurrentDir_FullPath" xml:space="preserve">
+    <value>Returns  the current working directory</value>
+  </data>
+  <data name="Description3_PathUtils" xml:space="preserve">
+    <value>Returns the absolute path for the specified path string ,checks the existence of the file ,etc.</value>
+  </data>
+  <data name="DisplayName2_Combine" xml:space="preserve">
+    <value>Combine</value>
+  </data>
+  <data name="DisplayName2_CurrentDir" xml:space="preserve">
+    <value>Current Dir</value>
+  </data>
+  <data name="DisplayName2_PathUtils" xml:space="preserve">
+    <value>Path Utils</value>
+  </data>
+  <data name="Description3_Base64Decode" xml:space="preserve">
+    <value>Converts the specified string, which encodes binary data as base-64 digits.</value>
+  </data>
+  <data name="Description3_Base64Encode" xml:space="preserve">
+    <value>Converts a String to its equivalent string representation that is encoded with base-64 digits.</value>
+  </data>
+  <data name="Description3_Base64EncodeFromFile" xml:space="preserve">
+    <value>Converts a String to its equivalent string representation that is encoded with base-64 digits.</value>
+  </data>
+  <data name="Description3_ConvertCRLF" xml:space="preserve">
+    <value>Convert the line feed code of the given text.</value>
+  </data>
+  <data name="Description3_ToJSONString" xml:space="preserve">
+    <value>An activity that converts arbitrary objects to JSON strings.</value>
+  </data>
+  <data name="DisplayName2_Base64Decode" xml:space="preserve">
+    <value>Base64 Decode</value>
+  </data>
+  <data name="DisplayName2_Base64Encode" xml:space="preserve">
+    <value>Base64 Encode</value>
+  </data>
+  <data name="DisplayName2_Base64EncodeFromFile" xml:space="preserve">
+    <value>Base64 Encode From File</value>
+  </data>
+  <data name="DisplayName2_ConvertCRLF" xml:space="preserve">
+    <value>Convert CR/LF</value>
+  </data>
+  <data name="DisplayName2_ToJSONString" xml:space="preserve">
+    <value>To JSON String</value>
   </data>
 </root>

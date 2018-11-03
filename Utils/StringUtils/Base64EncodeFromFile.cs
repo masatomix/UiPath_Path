@@ -6,6 +6,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.IO;
 using Utils.Common;
+using Utils.Properties;
 
 namespace Utils.StringUtils
 {
@@ -16,7 +17,6 @@ namespace Utils.StringUtils
 
         [Category("Input")]
         [RequiredArgument]
-        [LocalizedDescription("Base64EncodeFromFile_Description")]
         public InArgument<String> Path { get; set; }
 
 
