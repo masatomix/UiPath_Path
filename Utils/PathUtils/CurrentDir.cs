@@ -6,6 +6,7 @@ using System.Activities;
 using System.ComponentModel;
 using System.IO;
 using Utils.Common;
+using Utils.Properties;
 
 namespace Utils.PathUtils
 {
@@ -14,7 +15,6 @@ namespace Utils.PathUtils
     public sealed class CurrentDir : CodeActivity
     {
         [Category("Output")]
-        [LocalizedDescription("CurrentDir_Description")]
         public OutArgument<String> FullPath { get; set; }
 
         protected override void Execute(CodeActivityContext context)

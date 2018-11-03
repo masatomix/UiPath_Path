@@ -5,6 +5,7 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 using Utils.Common;
+using Utils.Properties;
 
 namespace Utils.StringUtils
 {
@@ -15,7 +16,6 @@ namespace Utils.StringUtils
     {
         [Category("Input")]
         [RequiredArgument]
-        [LocalizedDescription("Base64Decode_Description")]
         public InArgument<String> Target { get; set; }
 
 

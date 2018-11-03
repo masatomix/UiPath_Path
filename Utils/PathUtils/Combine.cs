@@ -13,13 +13,10 @@ namespace Utils.PathUtils
 {
 
     [Designer(typeof(CombineDesigner))]
-    //[DisplayName("パス連結")]
     public sealed class Combine : CodeActivity
     {
         [Category("Input")]
         [RequiredArgument]
-        [LocalizedDescription("Combine_Description")]
-        //[DisplayName("パスの配列")]
         public InArgument<String[]> PathArray { get; set; }
 
         [Category("Output")]
