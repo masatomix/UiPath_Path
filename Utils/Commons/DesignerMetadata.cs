@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Threading;
 using System.Activities.Presentation.Metadata;
 using Utils.PathUtils;
+using Utils.Properties;
 
 namespace Utils
 {
@@ -23,33 +24,32 @@ namespace Utils
         {
             // 1.Activitiesペイン上のツリー構造を構築する。
             {
-                string PathUtils_categories = "ツリー1.ツリー2.Utilities";
-                builder.AddCustomAttributes(typeof(Combine), new CategoryAttribute(PathUtils_categories));
+                builder.AddCustomAttributes(typeof(Combine), new CategoryAttribute(Resources.Category1_Combine));
             }
 
             // 2.Activitiesペイン上のアクティビティ名
             {
-                builder.AddCustomAttributes(typeof(Combine), new DisplayNameAttribute("パス連結アクティビティ"));
+                builder.AddCustomAttributes(typeof(Combine), new DisplayNameAttribute(Resources.DisplayName2_Combine));
             }
 
             // 3.Activitiesペイン上のアクティビティをポイントしたときに表示されるツールチップ文言
             {
-                builder.AddCustomAttributes(typeof(Combine), new DescriptionAttribute("ツールチップに説明文を書こう"));
+                builder.AddCustomAttributes(typeof(Combine), new DescriptionAttribute(Resources.Description3_Combine));
             }
 
             // 4.プロパティペイン内のプロパティの説明文言
             {
-                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new DescriptionAttribute("このプロパティの説明を書く"));
+                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new DescriptionAttribute(Resources.Description4_Combine_PathArray));
             }
 
             // 5.プロパティペインの、カテゴリ名
             {
-                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new CategoryAttribute("インプット"));
+                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new CategoryAttribute(Resources.Category5_Combine_PathArray));
             }
 
             // 6.プロパティペイン内のプロパティの変数名
             {
-                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new DisplayNameAttribute("パス配列"));
+                builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new DisplayNameAttribute(Resources.DisplayName6_Combine_PathArray));
             }
         }
     }

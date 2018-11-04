@@ -50,11 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commons\DesignerMetadata.cs" />
+    <Compile Include="PathUtils\CurrentCultureCheck.cs" />
     <Compile Include="PathUtils\Combine.cs" />
     <Compile Include="PathUtils\CombineDesigner.xaml.cs">
       <DependentUpon>CombineDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="PathUtils\CombineDesigner.xaml">
@@ -64,6 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\folder_wrench.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.ja.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
