@@ -125,6 +125,9 @@
     <value>インプット</value>
     <comment>5</comment>
   </data>
+  <data name="CombineDesigner_Label" xml:space="preserve">
+    <value>Pathの配列</value>
+  </data>
   <data name="Description3_Combine" xml:space="preserve">
     <value>ツールチップに説明文を書こう</value>
     <comment>3</comment>

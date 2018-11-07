@@ -79,6 +79,15 @@ namespace Utils.Properties {
         }
         
         /// <summary>
+        ///   Path Array に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CombineDesigner_Label {
+            get {
+                return ResourceManager.GetString("CombineDesigner_Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Write descriptions on tooltips に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Description3_Combine {

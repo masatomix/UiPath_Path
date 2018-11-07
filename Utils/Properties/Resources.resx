@@ -125,6 +125,9 @@
     <value>Input</value>
     <comment>5</comment>
   </data>
+  <data name="CombineDesigner_Label" xml:space="preserve">
+    <value>pathArray</value>
+  </data>
   <data name="Description3_Combine" xml:space="preserve">
     <value>Write descriptions on tooltips</value>
     <comment>3</comment>
