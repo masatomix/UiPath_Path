@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Description4_PathUtils_DirectoryName" xml:space="preserve">
-    <value>Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no "\" at the end, the directory name is returned.</value>
+    <value>Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no "\" at the end, the directory path is returned.</value>
   </data>
   <data name="Description4_PathUtils_DirExists" xml:space="preserve">
     <value>Returns true if the specified Directory exists (returns false even if it exists if it is a File).</value>
@@ -209,5 +209,8 @@
   </data>
   <data name="DisplayName2_ToJSONString" xml:space="preserve">
     <value>To JSON String</value>
+  </data>
+  <data name="DisplayName6_PathUtils_DirectoryName" xml:space="preserve">
+    <value>DirectoryPath</value>
   </data>
 </root>

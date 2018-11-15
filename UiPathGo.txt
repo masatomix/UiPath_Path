@@ -1,0 +1,48 @@
+■ Component Name
+String & Path Utilities
+
+■ Summary
+String & Path Utilities
+
+■Description
+This library is a custom activity for UiPath.
+
+When using UiPath, I often want to call methods of .NET, such as getting the name of the current directory, base64 encode the file,These activities are the activities that call those methods. It provides the following functions.
+
+See also: https://github.com/masatomix/UiPath_Path/blob/master/README.md
+
+
+
+■The benefits of this component
+
+Call the .NET method.
+
+ Combine: Combines an array of strings into a path.
+ Current Dir: Gets the current working directory.
+ Path Utils: Returns the absolute path for the specified path string ,checks the existence of the file ,etc.
+ Base64 Encode: Base64 Encode.
+ Base64 Decode: Base64 Decode.
+ Base64 Encode From File: Base64 Encode from File
+ ConvertCRLF: Convert the line feed code of the given text.
+ ToJSONString: An activity that converts arbitrary objects to JSON strings.
+See also: https://github.com/masatomix/UiPath_Path/blob/master/README.md
+
+
+■ Dependencies
+Newtonsoft.Json (>= 8.0.3)
+
+■ The compatibility of this component
+Built and tested with:
+
+UiPath Studio 2018.2
+UiPath Studio 2018.3
+
+
+■ Version release notes
+Change target framework to .NET Framework 4.5.
+Add dependency of Newtonsoft.Json.
+Add ToJson Activity.
+Add English readme.
+
+■ Last Updated
+20/08/2018

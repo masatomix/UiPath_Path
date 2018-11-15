@@ -14,36 +14,73 @@ It provides the following functions.
 
 ## Path Utils
 ### Combine Activity
-![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/53dddd49-a08f-e13c-0703-71c24d42aa4b.png)
+![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/1a2d1f2a-1363-8c3b-8f04-88c1fad673d7.png)
 
  Combines an array of strings into a path. That is as follows:
 
 ```
 {"c:\temp","hogehoge"} → c:\temp\hogehoge
+{"temp","hogehoge"} → temp\hogehoge
+{"te/mp","hoge\hoge"} → te\mp\hoge\hoge
 ```
 
-calls `System.IO.Path.Combine` method . And calls `String.Replace("/", "\\")`  method to use '/' .
+calls `System.IO.Path.Combine` method . And calls `String.Replace("/", "\\")`  method to use `'/'` .
 
 ### Current Dir Activity
+![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/69f66769-0dba-a6f2-82e1-1487bc2812ba.png)
 
-![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/1ce599fd-4d0c-8aed-57ad-f3f5b2a43e36.png)
 
 Gets the current working directory. only calls `Directory.GetCurrentDirectory` method.
 
 
 ### Path Utils Activity
-![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/09863a71-fee7-1a84-2c29-24d947e5d206.png)
+![image.png](https://qiita-image-store.s3.amazonaws.com/0/73777/ce895d06-8232-335c-efbb-9fbea652b179.png)
 
 Specify relative/absolute path and get the following:
 
 |Properties|Description|
 |-----------------|------------------|
-| DirectoryName   |Basically it returns the same as `Path.GetDirectoryName()` ※.|
+| DirectoryPath   |Basically it returns the same as `Path.GetDirectoryName()` ※.|
 | DirExists       |returns true if the specified Directory exists (returns false even if it exists if it is a File).|
 | FileExists      |returns true if the specified File exists (returns false even if it exists if it is a Directory).|
 | FullPath        |returns full Path.|
 
-※ Basically it returns the same as `Path.GetDirectoryName()`. If an existing directory is specified, even if there is no "\\" at the end, the directory name is returned.
+※ Basically it returns the same as `Path.GetDirectoryName()`. If an existing directory is specified, even if there is no "\\" at the end, the directory path is returned.
+
+
+For examples:
+
+```
+Path: c:/temp/existsDir/
+→
+FullPath: c:\temp\existsDir\
+DirectoryPath: c:\temp\existsDir
+
+
+Path: c:/temp/existsDir
+→
+FullPath: c:\temp\existsDir
+DirectoryPath: c:\temp\existsDir   ← The .NET method returns c:\temp
+
+
+Path: c:/temp/notExistsDir/
+→
+FullPath: c:\temp\notExistsDir\
+DirectoryPath: c:\temp\notExistsDir
+
+
+Path: c:/temp/notExistsDir
+→
+FullPath: c:\temp\notExistsDir
+DirectoryPath: c:\temp
+
+
+Path: c:/temp/existsOrNotExistsFile.txt
+→
+FullPath: c:\temp\existsOrNotExistsFile.txt
+DirectoryPath: c:\temp
+```
+
 
 
 ## String Utils
