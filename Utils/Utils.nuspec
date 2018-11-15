@@ -12,17 +12,21 @@
     <description>
 When using UiPath, I often want to call methods of .NET, such as getting the name of the current directory, base64 encode the file,These activities are the activities that call those methods.
 
+See also: https://github.com/masatomix/UiPath_Path/blob/master/README.md
 
 UiPathをやっていると、今いるディレクトリ名を取得したり、ファイルをBase64 Encodeしたりなど、.NETのメソッドを呼びたいことがちょくちょくあるのですが、それらを呼び出すアクティビティになっています。
 
 </description>
     <releaseNotes>
-Available in English.
-Externalize Strings.
+Localization using Language of UiPath.
+Combine activity - When the path array is a relative path,I added the current directory, but I changed it so that I do not add it.
+Path Utils activity - Property name "DirectoryName" changed to "DirectoryPath".
 
-英語ロケールでは、英語表記になるように対応
+UiPathの言語設定によって、日本語表記・英語表記になるように対応
 というかデフォルトを英語とし、日本語ロケールで日本語表記になるように対応。Studio 2018.2までは日本語ロケールで起動しないので、英語表記となります。単純だから問題ないと思いますが。。
-文字列の外部化と、日本語リソースの作成が完了。
+
+Combine activity - パス配列に相対パスを指定したとき、カレントディレクトリを付与していたのですが、付与しないように変更しました。
+Path Utils activity - プロパティ名が"DirectoryName"だったのを、実際はパスを返しているため"DirectoryPath"に変更しました。
 </releaseNotes>
     <copyright>Copyright 2018 masatomix</copyright>
   </metadata>

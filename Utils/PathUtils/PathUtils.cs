@@ -24,7 +24,7 @@ namespace Utils.PathUtils
 
 
         [Category("Output")]
-        public OutArgument<String> DirectoryName { get; set; }
+        public OutArgument<String> DirectoryName { get; set; } // DesignerMetadata.csで、表記(DisplayName)をoverride
 
 
         [Category("Output")]
@@ -61,8 +61,11 @@ namespace Utils.PathUtils
                 // fullPathStrの元になっている pathStrの末尾が\で終わる場合、終わらない場合があり
                 // \で終了していない場合、GetDirectoryName はその上のパスを返してしまう
                 // そのディレクトリが存在するときくらい、そのパス自体を返してあげるべきでは、という対応
-                var tmp = System.IO.Path.Combine(fullPathStr, "dummy.txt");
 
+                // Basically it returns the same as `Path.GetDirectoryName()`. 
+                // If an existing directory is specified, even if there is no "\" at the end, 
+                // the directory path is returned.
+                var tmp = System.IO.Path.Combine(fullPathStr, "dummy.txt");
                 //  DirectoryName セクション
                 context.SetValue(DirectoryName, System.IO.Path.GetDirectoryName(tmp));
             }

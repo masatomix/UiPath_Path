@@ -34,10 +34,9 @@ namespace Utils
             // 1.Activitiesペイン上のツリー構造を構築する。
             // ドットで階層を表現する
             {
-                string PathUtils_categories = "Utils.Path Utilities";
-                builder.AddCustomAttributes(typeof(Combine), new CategoryAttribute(PathUtils_categories));
-                builder.AddCustomAttributes(typeof(CurrentDir), new CategoryAttribute(PathUtils_categories));
-                builder.AddCustomAttributes(typeof(Utils.PathUtils.PathUtils), new CategoryAttribute(PathUtils_categories));
+                builder.AddCustomAttributes(typeof(Combine), new CategoryAttribute(Resources.Category1_PathUtils));
+                builder.AddCustomAttributes(typeof(CurrentDir), new CategoryAttribute(Resources.Category1_PathUtils));
+                builder.AddCustomAttributes(typeof(Utils.PathUtils.PathUtils), new CategoryAttribute(Resources.Category1_PathUtils));
             }
 
             // 2.Activitiesペイン上のアクティビティ名
@@ -75,7 +74,9 @@ namespace Utils
             //}
 
             // 6.プロパティペイン内のプロパティの変数名
-            //builder.AddCustomAttributes(typeof(Combine), nameof(Combine.PathArray), new DisplayNameAttribute("test display1"));  //クラスのプロパティに直接 DisplayNameを書いたのと意味おなじ。
+            {
+                builder.AddCustomAttributes(typeof(Utils.PathUtils.PathUtils), nameof(Utils.PathUtils.PathUtils.DirectoryName), new DisplayNameAttribute(Resources.DisplayName6_PathUtils_DirectoryName));
+            }
         }
 
         private void addCustomAttributes_StringUtils_categoriess(AttributeTableBuilder builder)
@@ -84,12 +85,11 @@ namespace Utils
             // 1.Activitiesペイン上のツリー構造を構築する。
             // ドットで階層を表現する
             {
-                string StringUtils_categories = "Utils.String Utilities";
-                builder.AddCustomAttributes(typeof(Base64Encode), new CategoryAttribute(StringUtils_categories));
-                builder.AddCustomAttributes(typeof(Base64Decode), new CategoryAttribute(StringUtils_categories));
-                builder.AddCustomAttributes(typeof(Base64EncodeFromFile), new CategoryAttribute(StringUtils_categories));
-                builder.AddCustomAttributes(typeof(ConvertCRLF), new CategoryAttribute(StringUtils_categories));
-                builder.AddCustomAttributes(typeof(ToJSONString), new CategoryAttribute(StringUtils_categories));
+                builder.AddCustomAttributes(typeof(Base64Encode), new CategoryAttribute(Resources.Category1_StringUtils));
+                builder.AddCustomAttributes(typeof(Base64Decode), new CategoryAttribute(Resources.Category1_StringUtils));
+                builder.AddCustomAttributes(typeof(Base64EncodeFromFile), new CategoryAttribute(Resources.Category1_StringUtils));
+                builder.AddCustomAttributes(typeof(ConvertCRLF), new CategoryAttribute(Resources.Category1_StringUtils));
+                builder.AddCustomAttributes(typeof(ToJSONString), new CategoryAttribute(Resources.Category1_StringUtils));
             }
 
             // 2.Activitiesペイン上のアクティビティ名
