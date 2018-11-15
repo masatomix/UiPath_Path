@@ -120,8 +120,8 @@
   <data name="Description4_Combine_PathArray" xml:space="preserve">
     <value>stringの配列で、連結したいファイルパスを記述します。</value>
   </data>
-  <data name="Description4_PathUtils_DirectoryName_Desc" xml:space="preserve">
-    <value>Directory名が返ります。原則 Path.GetDirectoryName() とおなじものを返しますが存在するディレクトリを指定したときは末尾に\\がなくてもそのディレクトリ名を返します。Path.GetDirectoryName()はその上のディレクトリ名を返してしまうようで。。</value>
+  <data name="Description4_PathUtils_DirectoryName" xml:space="preserve">
+    <value>Directoryのフルパスが返ります。原則 Path.GetDirectoryName() とおなじものを返しますが存在するディレクトリを指定したときは末尾に\がなくても、そのディレクトリパスを返します。Path.GetDirectoryName()はその上のディレクトリパスを返してしまうようで。。</value>
   </data>
   <data name="Description4_PathUtils_DirExists" xml:space="preserve">
     <value>指定したディレクトリが存在すればTrue(ファイルだったら存在してもFalse)</value>

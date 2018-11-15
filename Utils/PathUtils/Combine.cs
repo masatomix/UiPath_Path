@@ -27,9 +27,9 @@ namespace Utils.PathUtils
         protected override void Execute(CodeActivityContext context)
         {
             var paths = PathArray.Get(context);
-            var combine = System.IO.Path.GetFullPath(
-                System.IO.Path.Combine(paths)
-                .Replace("/", "\\"));
+            var combine = System.IO.Path
+                .Combine(paths)
+                .Replace("/", "\\");
             // ユーザが "/" にしたときもバックスラッシュで返す
             Result.Set(context, combine);
         }

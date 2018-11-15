@@ -223,7 +223,7 @@ namespace Utils.Properties {
         }
         
         /// <summary>
-        ///   Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no &quot;\&quot; at the end, the directory name is returned. に類似しているローカライズされた文字列を検索します。
+        ///   Returns the same as Path.GetDirectoryName().If an existing directory is specified, even if there is no &quot;\&quot; at the end, the directory path is returned. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string Description4_PathUtils_DirectoryName {
             get {
@@ -336,6 +336,15 @@ namespace Utils.Properties {
         public static string DisplayName2_ToJSONString {
             get {
                 return ResourceManager.GetString("DisplayName2_ToJSONString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   DirectoryPath に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string DisplayName6_PathUtils_DirectoryName {
+            get {
+                return ResourceManager.GetString("DisplayName6_PathUtils_DirectoryName", resourceCulture);
             }
         }
     }
